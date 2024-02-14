@@ -2,7 +2,7 @@ n = int(input('Enter a number: '))
 max_sum_num = 0
 max_sum = 0
 while not (n==0):
-    cur_sum = sum([int(d) for d in str(n)])
+    cur_sum = sum([int(d) for d in str(n).replace('-', '')])
     if (cur_sum > max_sum):
         max_sum_num = n
         max_sum = cur_sum
